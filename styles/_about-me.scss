@@ -1,0 +1,15 @@
+.about-me {
+    @include flex-container;
+    padding: 20px 20px 0;
+    &__text {
+        width: 600px;
+        text-align: justify;
+        margin: 0 10px;
+    }
+    &__image {
+        max-width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+}

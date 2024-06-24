@@ -1,0 +1,6 @@
+.header {
+    @include flex-container;
+    background-color: $bg-color;
+    color: $secondary-color;
+    padding: 20px;
+}

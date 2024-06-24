@@ -1,0 +1,14 @@
+.social {
+    &__link {
+        font-size: 40px;
+        transition: all .5s;
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+        &:hover {
+            display: inline-block;
+            transform: scale(1.2);
+            color: $title-color;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.menu {
+    font-size: 25px;
+    &__item {
+        @include nav-header;
+        margin-right: 20px;
+        transition-duration: .5s;
+        &:hover {
+            color: $title-color;
+        }
+    }
+}

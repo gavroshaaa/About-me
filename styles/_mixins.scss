@@ -1,0 +1,10 @@
+@mixin nav-header {
+    border-top: 1.5px solid rgb(207, 93, 131);
+    text-transform: capitalize;
+}
+
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
