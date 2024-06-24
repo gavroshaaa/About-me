@@ -2,5 +2,8 @@
     padding: 10px 20px;
     &__note {
         text-align: left;
+        @media screen and (max-width: 900px) {
+            text-align: center;
+        }
     }
 }

@@ -9,6 +9,7 @@ body {
   background-color: blanchedalmond;
   color: rgb(182, 67, 105);
   font-size: 20px;
+  min-width: 450px;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
   padding: 20px 20px 0;
 }
 .about-me__text {
-  width: 600px;
+  max-width: 600px;
   text-align: justify;
   margin: 0 10px;
 }
@@ -33,12 +34,42 @@ a {
 .about-me__image img {
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .about-me__image {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-me {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-me__text {
+    order: 1;
+  }
+  .about-me__image {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .about-me__image {
+    max-width: 180px;
+  }
+}
 
 .favourites-series {
   margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (max-width: 900px) {
+  .favourites-series {
+    flex-direction: column;
+  }
+  .favourites-series__example:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .favourites-series__img {
   margin-right: 10px;
@@ -63,6 +94,11 @@ a {
 .favourites__note {
   text-align: left;
 }
+@media screen and (max-width: 900px) {
+  .favourites__note {
+    text-align: center;
+  }
+}
 
 .footer {
   background-color: pink;
@@ -78,12 +114,27 @@ a {
   color: rgba(228, 85, 109, 0.8);
   padding: 20px;
 }
+@media screen and (max-width: 958px) {
+  .header {
+    flex-direction: column;
+  }
+}
 
 .main-title {
   color: rgb(172, 15, 67);
   font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 958px) {
+  .main-title {
+    margin-bottom: 20px;
+  }
 }
 
 .menu {
@@ -97,6 +148,18 @@ a {
 }
 .menu__item:hover {
   color: rgb(172, 15, 67);
+}
+@media screen and (max-width: 594px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  .menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .social__link {
@@ -112,9 +175,20 @@ a {
   color: rgb(172, 15, 67);
 }
 
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
 .title {
   color: rgb(172, 15, 67);
   font-style: italic;
   font-size: 23px;
   margin: 10px 0;
+}
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */

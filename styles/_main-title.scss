@@ -3,4 +3,10 @@
     font-size: 40px;
     font-weight: 400;
     text-transform: uppercase;
+    @media screen and (max-width: 1200px) {
+        font-size: 36px;
+    }
+    @media screen and (max-width: 958px) {
+        margin-bottom: 20px;
+    }
 }

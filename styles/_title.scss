@@ -3,4 +3,7 @@
     font-style: italic;
     font-size: 23px;
     margin: 10px 0;
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
 }

@@ -3,4 +3,7 @@
     background-color: $bg-color;
     color: $secondary-color;
     padding: 20px;
+    @media screen and (max-width: 958px) {
+        flex-direction: column;
+    }
 }

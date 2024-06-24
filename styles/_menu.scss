@@ -8,4 +8,14 @@
             color: $title-color;
         }
     }
+    @media screen and (max-width: 594px) {
+        display: flex;
+        flex-direction: column;
+        &__item {
+            margin-right: 0;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
